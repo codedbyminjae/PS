@@ -30,7 +30,6 @@ public class Num9375 {
             // 곱셉 이용 위해 초기값 1로 설정
             int count = 1;
 
-            // 이 부분은 참조부분
             // values값을 인덱스로 접근하기 위해서 리스트 사용
             // 후에 리스트로 사용해야만 values.get 가능
             List<Integer> listvalues = new ArrayList<>(map.values());
