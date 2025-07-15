@@ -10,7 +10,7 @@ public class Num9375 {
 
     public static void main(String[] args) throws IOException {
 
-        // 테스트 케이스 개수 입력
+        // 테스트 케이스 개수 입력하기
         int N = Integer.parseInt(br.readLine());
 
         for (int i = 0; i < N; i++) {
