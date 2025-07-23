@@ -7,5 +7,6 @@ public class Num1000 {
         int m = a.nextInt();
 
         System.out.println(n + m);
+
     }
 }
