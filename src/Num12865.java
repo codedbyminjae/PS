@@ -28,6 +28,8 @@ public class Num12865 {
             for (int j = 1; j <= K; j++) {
                 // 물건을 넣을 수 있다면,
                 // 물건을 넣지 않는 경우와, 현재 물건을 넣는 경우 중 큰 가치 선택
+                // + value[i] <- 해당 코드가 점화식의 킥
+                // 물건을 넣기 전까지의 최고 가치에서 실제로 넣었을 때의 이득을 갱신시켜준다.
                 if (weight[i] <= j) {
                     dp[i][j] = Math.max(dp[i-1][j-weight[i]] + value[i], dp[i-1][j]);
                 } else {
