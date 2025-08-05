@@ -14,8 +14,6 @@ public class Num14500_Optimized {
         N = Integer.parseInt(firstLine[0]);
         M = Integer.parseInt(firstLine[1]);
 
-        map = new int[N][M];
-
         for (int i = 0; i < N; i++) {
             String[] row = br.readLine().split(" ");
             for (int j = 0; j < M; j++) {
@@ -99,7 +97,9 @@ public class Num14500_Optimized {
                 }
                 sum = sum + map[ni][nj];
             }
-            if (valid) max = Math.max(max, sum);
+            if (valid) {
+                max = Math.max(max, sum);
+            }
         }
     }
 
@@ -121,7 +121,9 @@ public class Num14500_Optimized {
                 }
                 sum += map[ni][nj];
             }
-            if (valid) max = Math.max(max, sum);
+            if (valid) {
+                max = Math.max(max, sum);
+            }
         }
     }
 }
