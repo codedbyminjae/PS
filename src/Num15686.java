@@ -44,6 +44,7 @@ public class Num15686 {
         }
 
         // dist[h][c] = h번 집 ~ c번 치킨집의 맨해튼 거리
+        // dist 배열을 미리 정의
         int[][] dist = new int[houseCount][chickenCount];
         for (int h = 0; h < houseCount; h++) {
             int hr = house[h][0], hc = house[h][1];
@@ -53,6 +54,7 @@ public class Num15686 {
             }
         }
 
+        // 조합 배열 초기화
         int C = chickenCount;
         int[] comb = new int[M];
         for (int i = 0; i < M; i++) {
@@ -62,6 +64,7 @@ public class Num15686 {
         int INF = 1000;
         int answer = INF;
 
+        // 조합 순회 && 도시 치킨 거리 계산
         while (true) {
             int sum = 0;
             for (int h = 0; h < houseCount; h++) {
@@ -71,11 +74,15 @@ public class Num15686 {
                     int d = dist[h][cidx];
                     if (d < best) best = d;
                 }
+                // 한개의 조합에 대해 모든 집의 최소 치킨 거리를 구해서 합산
                 sum = sum + best;
+                // sum >= 이면 가지치기 
                 if (sum >= answer) break;
             }
+            // 아니라면, answer 갱신
             if (sum < answer) answer = sum;
 
+            // 다음 조합 생성
             int i = M - 1;
             while (i >= 0 && comb[i] == C - M + i) i--;
             if (i < 0) break;       // 끝
