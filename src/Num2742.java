@@ -13,3 +13,4 @@ public class Num2742 {
         bw.flush();
     }
 }
+// 연습 문제
