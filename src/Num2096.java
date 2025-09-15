@@ -41,7 +41,7 @@ public class Num2096 {
         int maxResult = Math.max(Math.max(dpMax[N-1][0], dpMax[N-1][1]), dpMax[N-1][2]);
         int minResult = Math.min(Math.min(dpMin[N-1][0], dpMin[N-1][1]), dpMin[N-1][2]);
 
-        bw.write(minResult + " " + minResult + "\n");
+        bw.write(maxResult + " " + minResult + "\n");
         bw.flush();
     }
 }
