@@ -53,7 +53,7 @@ public class Num15663 {
             if (!used[i] && nums[i] != lastUsed) {
                 used[i] =  true;
                 sequance[depth] = nums[i];
-                lastUsed = nums[i]; // 현재 사용한 숫자 기록
+                lastUsed = nums[i]; // 현재 사용한 숫자를 기록해서 중복방지
                 backtrack(depth + 1);
                 used[i] = false; // 원상 복구
             }
