@@ -12,6 +12,7 @@ public class Num18111_Optimized {
         int M =  Integer.parseInt(input[1]);
         int B =  Integer.parseInt(input[2]);
 
+        // 맵 그리기
         int[][] map = new int[N][M];
         int minHeight = 256;
         int maxHeight = 0;
