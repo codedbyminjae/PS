@@ -13,7 +13,7 @@ public class Num27323 {
         int area = A * B;
 
         // 출력
-        bw.write(area + "\n");
+        bw.write(area + "\n"); // 쉬운 문제 풀이
         bw.flush();
     }
 }
