@@ -7,7 +7,7 @@ public class Num1008 {
         double a = sc.nextDouble();
         double b = sc.nextDouble();
 
-        double result = a / b;
+        double result = a / b; // 수정
         System.out.println(result);
 
     }
